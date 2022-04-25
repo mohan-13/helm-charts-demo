@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: bahmni-web
+    environment: dev
+  name: bahmni-web
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: bahmni-web
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: bahmni-web
+        environment: dev
+    spec:
+      containers:
+        - image: bahmni/bahmni-web:latest
+          name: bahmni-web
+          resources: {}
+      restartPolicy: Always

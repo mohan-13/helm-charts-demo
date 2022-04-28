@@ -11,4 +11,15 @@ entries:
     urls:
     - https://github.com/mohan-13/helm-charts-demo/releases/download/demo-0.1.1/demo-0.1.1.tgz
     version: 0.1.1
-generated: "2022-04-25T03:45:51.900047803Z"
+  openmrs:
+  - apiVersion: v2
+    appVersion: 0.94-123
+    created: "2022-04-28T16:13:28.451384+05:30"
+    description: Helm Chart for Bahmni OpenMRS
+    digest: 56d22fe46250f4f664c4802e4e66645c9fb12f177834377ee21eeabeb4b198b6
+    name: openmrs
+    type: application
+    urls:
+    - https://mohan-13.github.io/helm-charts-demo/openmrs-0.94-latest.tgz
+    version: 0.94-latest
+generated: "2022-04-28T16:13:28.445486+05:30"
